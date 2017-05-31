@@ -28,16 +28,16 @@
     * app
     * app/config
     * app/view
-    * app/view/home
-    * app/view/landing
+      * app/view/home
+      * app/view/landing
     * app/scss
-    * app/scss/lib
-    * app/scss/lib/base
-    * app/scss/lib/layout
-    * app/scss/lib/theme
+      * app/scss/lib
+      * app/scss/lib/base
+      * app/scss/lib/layout
+      * app/scss/lib/theme
     * app/service
     * app/component
-    * app/component/landing
+      * app/component/landing
   * include a **main.scss**
   * include an `.scss` partial for each component you create
   * style the application to meet the **sign in** & **sign up** mockups provided in the `wireframes` directory of this repo
@@ -45,7 +45,18 @@
 
 ## Clone
   * Clone, setup, and run the `slugram-backend` application in order for your angular app to communicate with the server
+    *  This is going to cloned into a separate directory (Don't clone it into your lab repo)
   * [slugram-backend](https://github.com/slugbyte/slugram-backend)
+    * Don't forget to add a `.env` to this repo
+      ```sh
+      MONGODB_URI='mongodb://localhost/cfgram-backend'
+      NODE_ENV='testing'
+      APP_SECRET='coolsecret'
+      PORT=3000
+      AWS_BUCKET='my-cool-bucket'
+      AWS_ACCESS_KEY_ID='access key id'
+      AWS_SECRET_ACCESS_KEY='secret access key'
+      ```
     * **note** - this application should be running on the `staging` branch
     * **note** - **DO NOT** include this application with your assignment submission
 
