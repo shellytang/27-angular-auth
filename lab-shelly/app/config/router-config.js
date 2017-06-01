@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 module.exports = ['$stateProvider', '$urlRouterProvider', routerConfig];
 

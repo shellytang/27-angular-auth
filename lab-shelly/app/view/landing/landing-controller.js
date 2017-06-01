@@ -5,18 +5,6 @@
 module.exports = ['$log', '$location', '$rootScope', 'authService', LandingController];
 
 function LandingController($log, $location, authService) {
-  this.$onInit = () => {
-    let url = $location.url();
-    this.showSignup = url === '/join#signup' || url === '/join';
-  };
+  let url = $location.url();
+  this.showSignup = url === '/join#signup' || url === '/join';
 }
-
-// module.exports = [
-//   '$log',
-//   '$location',
-//   '$rootScope',
-//   function($log, $location, $rootScope) {
-//     $log.debug('LandingController');
-//     let url = $location.url();
-//     this.showSignup = url === '/join#signup' || url === 'join';
-//   }]

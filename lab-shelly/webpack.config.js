@@ -1,3 +1,4 @@
+
 'use strict';
 
 const dotenv = require('dotenv');
@@ -12,10 +13,10 @@ const production = process.env.NODE_ENV === 'production';
 
 let plugins = [
   new ExtractTextPlugin('bundle.css'),
-  new HTMLPlugin({ template: `${__dirname}/app/index.html`}),
+  new HTMLPlugin({ template: `${__dirname}/app/index.html` }),
   new webpack.DefinePlugin({
-    _API_URL_: JSON.stringify(process.env.API_URL),
-    _DEBUG_: JSON.stringify(!production),
+    __API_URL__: JSON.stringify(process.env.API_URL),
+    __DEBUG__: JSON.stringify(!production),
   }),
 ];
 
@@ -38,7 +39,7 @@ module.exports = {
     path: `${__dirname}/build`,
   },
   plugins,
-  devtool: production ? false: 'source-map',
+  devtool: production ? false : 'source-map',
   module: {
     loaders: [
       {
@@ -52,7 +53,7 @@ module.exports = {
       },
       {
         test: /\.(eot|ttf|woff|svg).*/,
-        use: 'url?limit=10000&name=image/[hash].[ext]',
+        use: 'file-loader',
       },
       {
         test: /\.scss$/,
@@ -61,13 +62,13 @@ module.exports = {
             use: [
               {
                 loader: 'css-loader',
-                options: { sourceMape: true },
+                options: { sourceMap: true },
               },
               {
                 loader: 'sass-loader',
                 options: {
                   sourceMap: true,
-                  includePaths: [`${__dirname}/app/scss`],
+                  includePaths: [`${__dirname}/app/scss/`],
                 },
               },
             ],
