@@ -1,11 +1,10 @@
-// @import '../scss/lib/theme/theme';
-//
-// .home {
-//
-//   text-align: center;
-//
-//   h1 {
-//     text-align: center;
-//   }
-//
-// }
+@import '../../scss/lib/theme/theme';
+
+.home {
+
+  h2 {
+    padding-top: $gutter-sm;
+    text-align: center;
+  }
+
+}
