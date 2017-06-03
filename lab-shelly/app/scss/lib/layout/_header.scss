@@ -6,10 +6,17 @@ header {
   height: 6em;
   background: $brand-primary;
 
+  img {
+    width: 4em;
+    margin: 1em 0em 1em 1.5em;
+    float: left;
+  }
+
   h1 {
-    padding-top: 1.2em;
-    text-align: center;
     color: $white;
+    margin-top: 1.5em;
+    margin-left: 1em;
+    float: left;
   }
 
 }
