@@ -1,1 +1,21 @@
 @import '../scss/lib/theme/theme';
+
+.landing {
+  .join-container {
+
+    .join-inner {
+
+      outline: 2px solid red;
+
+      p  {
+          display: inline-block;
+      }
+
+      span {
+        font-size: .85em;
+        margin-left: 53%;
+      }
+
+    }
+  }
+}

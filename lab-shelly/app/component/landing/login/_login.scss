@@ -1,5 +1,8 @@
-// @import '../../scss/lib/theme/theme';
+@import '../scss/lib/theme/theme';
 
-// button {
-//   background: white;
-// }
+.login-form {
+  
+  .btn-std {
+      margin-left: 70%;
+  }
+}
