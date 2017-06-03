@@ -1,8 +1,16 @@
 @import '../scss/lib/theme/theme';
 
-.login-form {
-  
-  .btn-std {
+.login {
+
+    p {
+      margin-left: 5%;
+    }
+
+  .login-form {
+
+    .btn-std {
       margin-left: 70%;
+    }
+
   }
 }

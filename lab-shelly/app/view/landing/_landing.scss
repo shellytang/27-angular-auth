@@ -5,17 +5,16 @@
 
     .join-inner {
 
-      outline: 2px solid red;
+      .form-msg {
 
-      p  {
+          font-size: .85em;
+          margin-left: 60%;
+
+        p  {
           display: inline-block;
-      }
+        }
 
-      span {
-        font-size: .85em;
-        margin-left: 53%;
       }
-
     }
   }
 }
