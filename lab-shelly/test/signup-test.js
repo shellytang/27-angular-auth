@@ -1,8 +1,5 @@
 // 'use strict';
 //
-// const angular = require('angular');
-// require('angular-mocks');
-//
 // describe('testing auth signup form', function() {
 //
 //   beforeEach(() => {

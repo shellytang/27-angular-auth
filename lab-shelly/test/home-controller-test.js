@@ -6,7 +6,7 @@ require('angular-mocks');
 describe('Testing the home controller', function () {
 
   beforeEach(() => {
-    angular.mock.module('routesApp');
+    angular.mock.module('cfgram');
     angular.mock.inject(($rootScope, $controller) => {
       this.$rootScope = $rootScope;
       this.homeCtrl = new $controller('HomeController');
