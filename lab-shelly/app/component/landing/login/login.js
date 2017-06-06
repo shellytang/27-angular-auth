@@ -9,8 +9,8 @@ module.exports = {
 };
 
 function LoginController($log, $location, authService) {
-  $log.debug('LoginController');
   this.$onInit = () => {
+    $log.debug('LoginController');
     authService.getToken().then(() => $location.url('/home'));
     this.login = function() {
 

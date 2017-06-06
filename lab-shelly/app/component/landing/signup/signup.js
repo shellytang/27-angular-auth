@@ -9,8 +9,8 @@ module.exports = {
 };
 
 function SignupController($log, $location, authService) {
-  $log.debug('SignupController');
   this.$onInit = () => {
+    $log.debug('SignupController');
 
     authService.getToken().then(() => $location.url('/home'));
 
@@ -18,6 +18,6 @@ function SignupController($log, $location, authService) {
       $log.debug('signupCtrl.signup()');
       authService.signup(user).then(() => $location.url('/home'));
     };
-    
+
   };
 }
