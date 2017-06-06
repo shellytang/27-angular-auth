@@ -12,7 +12,6 @@ describe('Auth Service', function() {
     });
   });
 
-
   describe('authService.getToken()', () => {
     it('should return a token', () => {
       this.authService.token = null;
